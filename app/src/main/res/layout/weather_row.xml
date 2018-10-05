@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View"/>
+
+        <variable name="weatherModel" type="com.code.weather.Model.WeatherModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:paddingTop="@dimen/dp5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{weatherModel.date}"
+                android:layout_weight="9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{@string/label_degrees(weatherModel.temp)}"
+                android:layout_weight="10"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{weatherModel.sky}"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:paddingTop="@dimen/dp10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.timeList.get(0) ?? weatherModel.timeList.get(0)}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{@string/mini_degrees(weatherModel.tempList.get(0) ?? weatherModel.timeList.get(0))}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.skyList.get(0) ?? weatherModel.timeList.get(0)}"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.timeList.get(1) ?? weatherModel.timeList.get(1)}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{@string/mini_degrees(weatherModel.tempList.get(1) ?? weatherModel.timeList.get(1))}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.skyList.get(1) ?? weatherModel.timeList.get(1)}"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.timeList.get(2) ?? weatherModel.timeList.get(2)}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{@string/mini_degrees(weatherModel.tempList.get(2) ?? weatherModel.timeList.get(2))}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.skyList.get(2) ?? weatherModel.timeList.get(2)}"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.timeList.get(3) ?? weatherModel.timeList.get(3)}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{@string/mini_degrees(weatherModel.tempList.get(3) ?? weatherModel.timeList.get(3))}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.skyList.get(3) ?? weatherModel.timeList.get(3)}"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.timeList.get(4) ?? weatherModel.timeList.get(4)}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{@string/mini_degrees(weatherModel.tempList.get(4) ?? weatherModel.timeList.get(4))}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.skyList.get(4) ?? weatherModel.timeList.get(4)}"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.timeList.get(5) ?? weatherModel.timeList.get(5)}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{@string/mini_degrees(weatherModel.tempList.get(5) ?? weatherModel.timeList.get(5))}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.skyList.get(5) ?? weatherModel.timeList.get(5)}"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.timeList.get(6) ?? weatherModel.timeList.get(6)}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{@string/mini_degrees(weatherModel.tempList.get(6) ?? weatherModel.timeList.get(6))}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.skyList.get(6) ?? weatherModel.timeList.get(6)}"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.timeList.get(7) ?? weatherModel.timeList.get(7)}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{@string/mini_degrees(weatherModel.tempList.get(7) ?? weatherModel.timeList.get(7))}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp10"
+                    android:text="@{weatherModel.skyList.get(7) ?? weatherModel.timeList.get(7)}"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">New York Weather</string>
+
+    <string name="network_error">Network access error</string>
+    <string name="check_settings">\nCheck your WiFi or Phone settings.</string>
+    <string name="exit_app">\nExit App</string>
+
+    <string name="mini_degrees">%s&#176;</string>
+    <string name="label_degrees">%s &#176;F</string>
+
+    <string name="weather_api">http://api.openweathermap.org/data/2.5/forecast?id=5128581&amp;appid=5627ccac7b7e06dffa99488c060e0931</string>
+</resources>
