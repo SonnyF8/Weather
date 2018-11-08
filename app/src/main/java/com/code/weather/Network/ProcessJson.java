@@ -1,9 +1,5 @@
 package com.code.weather.Network;
 
-import android.app.Activity;
-import android.app.Application;
-
-import com.code.weather.Model.DataClasses.City;
 import com.code.weather.Model.DataClasses.List;
 import com.code.weather.Model.DataClasses.Main;
 import com.code.weather.Model.DataClasses.RootJSON;
